@@ -5,7 +5,7 @@ class FlickrPhotoset extends FlickrData
         'Title' => 'Varchar',
         'ID' => 'Varchar'
     );
-    
+
     /**
      * @var string photoset owner identifier
      */
@@ -65,7 +65,7 @@ class FlickrPhotoset extends FlickrData
         if ($this->userId === null || !is_string($this->userId)) {
             return "";
         }
-        
+
         return sprintf(
             '%swww.flickr.com/photos/%s/sets/%s',
             Director::protocol(),

@@ -214,7 +214,7 @@ class FlickrService extends RestfulService
     /**
      * This returns API responses saved to a SS_Cache file instead of the API response directly
      * as the Flickr API is often not reliable
-     * 
+     *
      * @param String $funcName Name of the function to call if cache expired or does not exist
      * @param  array $args Arguments for the function
      * @return ArrayList<FlickrPhoto|FlickrPhotoset>
@@ -318,7 +318,7 @@ class FlickrService extends RestfulService
         return $return;
     }
 
-    /** 
+    /**
      * @param int $modifiedTime Timestamp of when cache file was last modified
      * @return boolean Check to see if the soft cache has expired
      */
@@ -355,7 +355,7 @@ class FlickrService extends RestfulService
     {
         return $this->responseMessage;
     }
-        
+
     private function defaultParams()
     {
         return array(
